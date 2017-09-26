@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Marketing ABC / XYZ</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+<!-- <link href="css/font-awesome.css" rel="stylesheet">-->
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<link rel="stylesheet" type="text/css" href="css/component1.css" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="container-fluid bdy-section">
+  <div class="component">
+    <ul class="grid -center threeDcube" id="cubes">
+      <li>
+        <div class="header-section">
+          <div class="signature">
+          <a href="http://thebges.edu.in/" target="_blank"><img src="images/logo.png" alt=""></a>
+      <!--     <a href="http://www.techshu.com/" target="_blank"><img src="images/techshu-logo.png" alt=""></a> 
+          </div>
+          <div class="mainDiv">
+  <div class="square"><a href="https://www.indusnet.co.in/" target="_blank"><img src="images/logo.png" alt=""></a></div>
+  <div class="square2"><a href="https://www.indusnet.co.in/" target="_blank"><img src="images/logo.png" alt=""></a></div>
+  <div class="square3"><a href="https://www.indusnet.co.in/" target="_blank"><img src="images/logo.png" alt=""></a></div>
+</div>-->
+          <div class="paragraph_section">
+          <h2>ABC of selfepreneurship.</h2>
+          <p>Selfpreneuer: Being a selfpreneuer is being self sufficient or self-independent. In life there comes certain instances where we have to learn alone and go through the hardships alone. During this time we learn from our experience and environment. It is very important that we stay updated with what is happening in the world and brush up on our strengths. As we grow up, we may go through some tough obstacles that will make us a strong, independent person. But sometimes life happens and we lose our sense of independence.</p>
+        </div>
+        </div>
+        
+      </li>
+
+       
+    </ul>
+  </div>
+  <div id="modelcontent"></div>
+</div>
+<div class="footer-section">
+  <div class="container">
+    <p>Indus Net TechShu © 2017 All rights reserved.</p>
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script>
+var data = { albhabets: [
+    {   front: "A",
+        back: "a",
+        color: "#081b4d",
+        items: [
+        {title:"Aspire",
+message: "to long, aim and seek something that will fulfill your dreams. To hope and desire for something big. We aspire and work to attain something big."},
+
+{title:"Assets",
+message: "Selfepreneurship is the pursuit of opportunities to combine or deploy resources regardless of present ownership or control of those resources. In the beginning a new entrepreneur doesn’t own any assets. The assets can be financial, physical or human resources, technology or intangibles such as brands. Sustainable entrepreneurial advantage depends on the possession of unique ideas and innovations."}]
+    },
+    {   front: "B",
+        back: "b",
+        color: "#98aadb",
+        items: [
+        {title:"Behavior",
+message: " Selfepreneurship is a distinct feature of an individual or institution, but it is not a trait but an aspect of behaviour. Behaviour is the central element in the entrepreneurial process, and a person’s actions are what make them entrepreneurial. Entrepreneurial behaviour is the result of the successful development of an organisation by a growth oriented Selfepreneurs."}]
+    },
+    {   front: "C",
+        back: "c",
+        color: "#900000",
+        items: [
+        {title:"Creativity",
+message: ' Creativity is coming up with innovative ideas. Selfepreneurship involves capturing ideas, converting them into products and services, and then building a venture to take the product to market after creating a demand.<br/>“Whenever some firms in an industry do something else, something that is outside of the range of existing practice, we may speak of creative response. Accordingly, a study of creative response in business becomes co-terminous with a study of entrepreneurship”.'}]
+    },
+    {   front: "D",
+        back: "d",
+        color: "#c1b4b4",
+        items: [
+        {title:"Different",
+message: ' Selfepreneurs are motivated by doing something different rather than doing better what is already being done. It is in most cases they see “the new possibility and are able to cope with the resistances and difficulties which action always meets with outside of the ruts of established practice”.Selfepreneurs are individuals who create something different.'}]
+    },
+    {   front: "E",
+        back: "e",
+        color: "#6b410d",
+        items: [
+        { title:"Execution",
+            message: 'Profitable survival and growth requires a combination of a creative idea and a superior capacity for execution.<br/>"It is not invention that matters, but its adoption and actual working. The inventor produces ideas, the Selfepreneur gets things done".<br/>Selfepreneurs share a commitment to engaging everyone in identifying and pursuing entrepreneurial opportunities, coupled with a disciplined and consistent focus on execution. They make execution a natural sequence in the strategy process.'}]
+    },
+    {   front: "F",
+        back: "f",
+        color: "#a7d5d6",
+        items: [
+        { title: "Frugality",
+        message: 'American Airways CEO Bob Crandall who figured that if the airline removed 1 extra olive from the first class salad, it would save 40K US$ year. What stunned me was the story on his inquiry on security guards expenses. He was told they were to protect the airplanes. He got them replaced by dogs. The next time, he probed why the Co was spending on dog biscuits. He was reminded about his switch to dogs. He ordered dogs to be recorded & their barking played inside the hangars. He got rid of the dogs & biscuits :)<br/>My lessons :<br/>- The \'silly\' money you save ISN\'T about moneys. It\'s about creating a MINDSET not to waste money.<br/>- Costs escalate very fast. Revenues don\'t. I prefer spending with lots of caution.<br/>- In funding winters, frugality reigns supreme. In fact, when summer comes, you have stopped bothering about the weather'}]
+    },
+    {   front: "G",
+        back: "g",
+        color: "#6d2020",
+        items: [
+        { title: "Growth",
+        message: "The Selfepreneur mind-set is growth oriented. Growth is the dominant goal of any organisation. The Selfepreneur establishes and manages a business for the primary purposes of profit and growth. The activities does not cease once a new firm is fully operative, or an innovation successfully launched. Growth is the regular and continuous function that keeps happening."}]
+    },
+    {   front: "H",
+        back: "h",
+        color: "#8d8d8d",
+        items: [
+        { title: "Hard",
+        message: "The journey to success is notoriously hard, and the start-up failure rate is very high. A Selfepreneur has the persistence to see things through to the end even when faced with obstacles and difficulties."}]
+    },
+    {   front: "I",
+        back: "i",
+        color: "#2f1212",
+        items: [
+        { title: "Innovation",
+        message: "Innovation is the creation, development and implementation of new ideas and behaviours. It is through innovation that ideas are brought to life, and opportunities are translated to enduring value."}]
+    },
+    {   front: "J",
+        back: "j",
+        color: "#6f5029",
+        items: [
+        { title: "Jobs",
+        message: "It causes economic growth and creates employment. Research shows that most jobs in an economy are created by small businesses. Start-ups and small businesses have emerged as the driving force of innovation, jobs, competitiveness and growth"}]
+    },
+    {   front: "K",
+        back: "k",
+        color: "#dfd287",
+        items: [
+        { title: "Knowledge",
+        message: "Learning is an essential part of the Selfepreneur process. At the heart of the modern corporation is a realisation that a company’s prime assets are no longer plant, machinery, buildings, finance etc., but the intellectual capabilities of its people, and that the knowledge and ideas flowing from it are a more important source of competitive advantage than a firm’s physical assets. The shift in competitiveness is to knowledge. A firm’s rate of growth can be limited or enhanced by the growth of knowledge within it."}]
+    },
+    {   front: "L",
+        back: "l",
+        color: "#778d44",
+        items: [
+        { title: "Leadership",
+        message: "Selfepreneurs aims at leadership and dominance of a new market or niche. Many companies have survived, prospered and maintained their positions as leaders in their fields by actively stimulating a spirit and culture of enterprise. Selfepreneurship is a leadership phenomenon, which “creates visionary scenarios that are used to assemble and mobilize stakeholders who become committed by the vision towards the discovery and exploitation of strategic value creation”."}]
+    },
+    {   front: "M",
+        back: "m",
+        color: "#0e4b3c",
+        items: [
+        { title: "Motivated",
+        message: "A Selfepreneur has to be motivated regularly and carry out activities that will keep the team motivated throughout. "}]
+    }
+    ]
+};
+ 
+var tpl = "{{#albhabets}}"+
+"<li class='ot-letter-left flipcube' data-toggle='modal' data-target='#myModal_{{back}}'>"+
+  "<div class='w'>"+
+    "<div class='f' style='background-color: {{color}};'>"+
+      "<h3 class='front'> <span data-letter='{{front}}' data-toggle='tooltip' title='Audit'>{{front}}</span>  </h3>"+
+    "</div>"+
+    "<div class='b'>"+
+      "<h3 class='back'><span data-letter='{{back}}' data-toggle='tooltip' title='Audit'>{{back}}</span></h3>"+
+    "</div>"+
+  "</div>"+
+"</li>"+
+"{{/albhabets}}";
+
+var html = Mustache.to_html(tpl, data);
+$('#cubes').append(html); 
+
+var tpl = "{{#albhabets}}<div id='myModal_{{back}}' class='modal fade' role='dialog'>"+
+    "<div class='modal-dialog'>"+
+      "<!-- Modal content-->"+
+      "<div class='modal-content mc1'>"+
+        "{{#items}}<div class='modal-header'>"+
+          "<button type='button' class='close' data-dismiss='modal'>&times;</button>"+
+          "<h4 class='modal-title'>{{title}}</h4>"+
+        "</div>"+
+        "<div class='modal-body'>"+
+          "<p>{{{message}}}"+
+          "</p>"+
+        "</div><br/>{{/items}}"+
+      "</div>"+
+    "</div>"+
+  "</div>{{/albhabets}}";
+
+var html = Mustache.to_html(tpl, data);
+$('#modelcontent').html(html);
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+<script>
+'use strict';
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+// - Noel Delgado | @pixelia_me
+
+var DAH = function () {
+  function DAH(nodes) {
+    var _this = this;
+
+    _classCallCheck(this, DAH);
+
+    this.nodes = [];
+
+    Array.prototype.slice.call(nodes, 0).forEach(function (node) {
+      _this.nodes.push(new Node(node));
+    });
+
+    this._bindEvents();
+  }
+
+  DAH.prototype._bindEvents = function _bindEvents() {
+    var _this2 = this;
+
+    ['_resizeHandler'].forEach(function (fn) {
+      return _this2[fn] = _this2[fn].bind(_this2);
+    });
+    window.addEventListener('resize', this._resizeHandler, false);
+  };
+
+  DAH.prototype._resizeHandler = function _resizeHandler() {
+    this.nodes.forEach(function (node) {
+      return node.update();
+    });
+  };
+
+  return DAH;
+}();
+
+var Node = function () {
+  function Node(node) {
+    _classCallCheck(this, Node);
+
+    this.element = node;
+    this._bindEvents().update();
+  }
+
+  Node.prototype.update = function update() {
+    // const bcr = this.element.getBoundingClientRect();
+    // this.l = bcr.left;
+    // this.t = bcr.top;
+    this.w = this.element.offsetWidth;
+    this.h = this.element.offsetHeight;
+    this.l = this.element.offsetLeft;
+    this.t = this.element.offsetTop;
+  };
+
+  Node.prototype._bindEvents = function _bindEvents() {
+    var _this3 = this;
+
+    ['_mouseEnterHandler', '_mouseOutHandler'].forEach(function (fn) {
+      return _this3[fn] = _this3[fn].bind(_this3);
+    });
+    this.element.addEventListener('mouseenter', this._mouseEnterHandler, false);
+    this.element.addEventListener('mouseout', this._mouseOutHandler, false);
+    return this;
+  };
+
+  Node.prototype._mouseEnterHandler = function _mouseEnterHandler(ev) {
+    this._addClass(ev, 'in');
+  };
+
+  Node.prototype._mouseOutHandler = function _mouseOutHandler(ev) {
+    this._addClass(ev, 'out');
+  };
+
+  Node.prototype._addClass = function _addClass(ev, state) {
+    var direction = this._getDirection(ev);
+    var class_suffix = '';
+
+    switch (direction) {
+      case 0:
+        class_suffix = '-top';break;
+      case 1:
+        class_suffix = '-right';break;
+      case 2:
+        class_suffix = '-bottom';break;
+      case 3:
+        class_suffix = '-left';break;
+    }
+
+    this.element.className = '';
+    this.element.classList.add(state + class_suffix);
+  };
+
+  Node.prototype._getDirection = function _getDirection(ev) {
+    var w = this.w,
+        h = this.h,
+        x = ev.pageX - this.l - w / 2 * (w > h ? h / w : 1),
+        y = ev.pageY - this.t - h / 2 * (h > w ? w / h : 1),
+        d = Math.round(Math.atan2(y, x) / 1.57079633 + 5) % 4;
+
+    return d;
+  };
+
+  return Node;
+}();
+
+new DAH(document.querySelectorAll('li'));
+</script>
+
+</body>
+</html>

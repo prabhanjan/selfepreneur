@@ -1,0 +1,121 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+	font-weight: 300;
+	color: #000;
+	font-family: 'Lato', sans-serif;
+	margin:0; padding:0;
+}
+img{max-width:100%;}
+
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+a {
+	color: #e74d3c;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #fff;
+}
+.bdy-section{ padding:0;}
+
+.header-section {
+	padding: 10px 15px 0;
+	text-align:center;
+}
+.header-section p {
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+}
+
+.codrops-header h1 {
+	font-size: 38px;
+	line-height: 36px;
+	padding: 0 0 15px;
+	font-weight: 400;
+	color: #ea6657;
+	margin: 0;
+}
+
+.codrops-header a {
+	display: block;
+	margin: 10px 0;
+	font-weight: 400;
+}
+
+.grid li .codrops-header a span {
+	color: #e74d3c;
+	font-weight: 400;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.grid li .codrops-header a:hover span {
+	color: #fff;
+}
+
+.codrops-icon:before {
+	font-family: 'Lato', sans-serif;
+	margin: 0 4px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+.related {
+	clear: both;
+	text-align: center;
+	font-size: 2em;
+	padding: 1em 0;
+}
+
+.signature{ margin:90px 0 0;}
+
+.modal-dialog {
+    margin: 50px auto;
+    width: 600px;
+}
+
+.footer-section{ width:100%; background:#CCC; padding:15px 0; margin:5px 0 0 0;}
+.footer-section p{ font-family: 'Lato', sans-serif;font-size:18px; color:#333;  text-align:center;}
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
