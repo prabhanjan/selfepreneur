@@ -34,7 +34,7 @@ a:hover, a:focus {
 	padding:0;
 }
 .header-section {
-	padding: 10px 50px 0;
+	padding: 10px 20px 0;
 	text-align:justify;
 }
 .header-section h2 {
@@ -101,6 +101,9 @@ a:hover, a:focus {
 .signature {
 	margin:0px 0 0;
 	text-align: right;
+}
+.signature h2{
+  margin: 0px 0px 20px 0px;
 }
 .modal-dialog {
 	margin: 0px auto;
