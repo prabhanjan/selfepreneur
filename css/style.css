@@ -321,8 +321,8 @@ ul.threeDcube li {
 .b {
   padding: 16px;
   padding: 1rem;
-  background-image: -webkit-radial-gradient(circle, #333, #000 160%);
-  background-image: radial-gradient(circle, #333, #000 160%);
+ background-image: -webkit-radial-gradient(circle, #d1ea00, #9cb514 160%);
+  background-image: radial-gradient(circle, #d1ea00, #9cb514 160%);
   -webkit-transform: translate3d(0,0,-1px);
           transform: translate3d(0,0,-1px);
 
@@ -337,7 +337,8 @@ ul.threeDcube li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-shadow: 0 20px 20px black;
+/*  text-shadow: 0 20px 20px black;*/
+color: black;
   text-align: center;
 }
 
@@ -404,6 +405,9 @@ ul.threeDcube li {
           animation-play-state: running;
 }
 
+.in-top .w .f,.in-right .w .f,.in-bottom .w .f,.in-left .w .f{
+  display: none;
+}
 .out {
 }
 

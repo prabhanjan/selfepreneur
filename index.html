@@ -65,7 +65,7 @@ var data = { albhabets: [
         back: "a",
         color: "#27337d",
         items: [
-        {title: "Are right, a lot https://www.amazon.jobs/principles ",
+        {title: "Are right, a lot",
 message: ""}]
     },
     {   front: "B",
@@ -253,7 +253,7 @@ var tpl = "{{#albhabets}}"+
       "<h3 class='front'> <span data-letter='{{front}}' data-toggle='tooltip' title='Audit'>{{front}}</span>  </h3>"+
     "</div>"+
     "<div class='b'>"+
-      "<h3 class='back'><span data-letter='{{back}}' data-toggle='tooltip' title='Audit'>{{back}}</span></h3>"+
+      "<spam>{{#items}}{{title}}{{/items}}</span>"+
     "</div>"+
   "</div>"+
 "</li>"+
