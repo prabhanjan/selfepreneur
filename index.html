@@ -66,35 +66,35 @@ var data = { albhabets: [
         color: "#27337d",
         items: [
         {title: "Are right, a lot",
-message: ""}]
+message: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/7i7TQn4iFEQ?showinfo=0\" frameborder=\"0\" allowfullscreen></iframe>"}]
     },
     {   front: "B",
         back: "b",
         color: "#78348b",
         items: [
         {title: "Balancing is everything, know the timeline & scale",
-message: ""}]
+message: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/zfTCY6cKG8g?showinfo=0\" frameborder=\"0\" allowfullscreen></iframe>"}]
     },
     {   front: "C",
         back: "c",
         color: "#c2388d",
         items: [
         {title: "Confidence at Character & Personality Level ",
-message: ""}]
+message: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/xTpWvTYiWFs?showinfo=0\" frameborder=\"0\" allowfullscreen></iframe>"}]
     },
     {   front: "D",
         back: "d",
         color: "#203a8f",
         items: [
         {title: "Discipline to get right things done  ",
-message: ""}]
+message: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/qC9iCxdq5PI?showinfo=0\" frameborder=\"0\" allowfullscreen></iframe>"}]
     },
     {   front: "E",
         back: "e",
         color: "#5b388c",
         items: [
         { title: "Energy & Energize ",
-            message: ""}]
+            message: "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/r830tT9Hc3k?showinfo=0\" frameborder=\"0\" allowfullscreen></iframe>"}]
     },
     {   front: "F",
         back: "f",
@@ -278,10 +278,16 @@ var tpl = "{{#albhabets}}<div id='myModal_{{back}}' class='modal fade' role='dia
     "</div>"+
   "</div>{{/albhabets}}";
 
+
+
 var html = Mustache.to_html(tpl, data);
 $('#modelcontent').html(html);
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
+});
+
+$(".modal").on('hidden.bs.modal', function (e) {
+        $(this).find("iframe").attr("src", $(this).find("iframe").attr("src"));
 });
 </script>
 <script>
