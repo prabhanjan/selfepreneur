@@ -610,3 +610,15 @@ transform: rotate(150deg) translate(-40px, -16px) skew(30deg, 0deg);
   left: 0px;
   top: -32px;
 }
+
+.myModal_frm_btn{
+    background-color: #5b388c;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.myModal_frm_btn:hover{
+    background-color: #b84191 !important;
+}
